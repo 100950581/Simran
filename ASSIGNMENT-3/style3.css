@@ -1,0 +1,150 @@
+/* Font face */
+@font-face {
+  font-family: 'Merriweather';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Merriweather'), local('Merriweather-Regular'), url('https://fonts.gstatic.com/s/merriweather/v22/u-440qyriQwlOrhSvowK_l52xwNZWMf_.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Lato'), local('Lato-Regular'), url('https://fonts.gstatic.com/s/lato/v17/S6u_w4BMUTPHjxsI9w2_FQftx9897sxZ.woff2') format('woff2');
+}
+
+/* General setup */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  min-width: 1000px;
+  max-width: 1400px;
+  font-family: 'Merriweather', serif;
+  font-size: 10px;
+  line-height: 1.6;
+  letter-spacing: 0.5px;
+  word-spacing: 1px;
+}
+
+/* Layout */
+section {
+  float: left;
+  width: 50%;
+}
+
+aside {
+  float: left;
+  width: 30%;
+}
+
+nav {
+  float: left;
+  width: 20%;
+}
+
+footer {
+  clear: both;
+}
+
+header, section, aside, nav, footer {
+  padding: 20px;
+}
+
+/* Header and footer */
+header, footer {
+  border-top: 5px solid #a66;
+  border-bottom: 5px solid #a66;
+  text-align: center;
+}
+
+/* Apply fonts */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Lato', sans-serif;
+  letter-spacing: 1px;
+}
+
+h1 {
+  font-size: 2.4rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+p {
+  margin: 1.2rem 0;
+  font-size: 1.4rem;
+  line-height: 1.8;
+  letter-spacing: 0.5px;
+  word-spacing: 1px;
+}
+
+p + p {
+  text-indent: 20px;
+}
+
+/* Link Styling */
+a {
+  color: #a66;
+  text-decoration: underline;
+  outline: none;
+}
+
+a:hover, a:focus {
+  text-decoration: none;
+}
+
+a:active {
+  color: #f00;
+}
+
+a[href^="http"]::after {
+  content: url('external-link-icon.png');
+  display: inline-block;
+  margin-left: 5px;
+}
+
+a:focus {
+  outline: 2px solid #a66;
+}
+
+/* List Styling */
+ul, ol {
+  margin: 1.2rem 0;
+  padding-left: 1.5rem;
+}
+
+li {
+  line-height: 1.8;
+  list-style-type: none;
+}
+
+/* Navigation Menu Styling */
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  margin: 1rem 0;
+}
+
+nav ul li a {
+  display: block;
+  padding: 10px 15px;
+  background-color: #fff;
+  color: #a66;
+  text-decoration: none;
+  border: 1px solid #a66;
+  border-radius: 4px;
+  text-align: center;
+}
+
+nav ul li a:hover {
+  background-color: #f00;
+  color: #fff;
+}

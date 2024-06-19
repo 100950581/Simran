@@ -1,0 +1,27 @@
+html {
+    font-family: sans-serif;
+  }
+  
+  /* Your CSS below here */
+
+  body {
+    width: 100%;
+  }
+  
+  div {
+    margin: auto;
+    background: linear-gradient(to bottom right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.2) 30%, rgba(0, 0, 0, 0.2) 100%);
+    background-color: red; /* Base color for the design */
+    color: white; /* Contrasting color for the text */
+    height: 200px; /* Reasonable height */
+    width: 300px; /* Reasonable width */
+    text-align: center; /* Center the text horizontally */
+    line-height: 200px; /* Center the text vertically */
+    font-size: 1.125rem; /* 18px/16px = 1.125 (default rem size is 16px) */
+    text-shadow: 1px 1px 2px black; /* Black text shadow */
+    border: 1px solid #cc0000; /* 1-pixel solid border with a slightly darker shade */
+    border-radius: 20px; /* Subtle border radius */
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2), /* Standard box shadow */
+                inset 2px 2px 5px white, /* Inset white shadow */
+                inset -2px -2px 5px black; /* Inset black shadow */
+  }
